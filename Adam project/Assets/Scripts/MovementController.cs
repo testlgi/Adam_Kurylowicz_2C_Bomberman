@@ -20,6 +20,7 @@ public class MovementController : MonoBehaviour
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody2D>();
+        activeSpriteRenderer = spriteRendererDown;
     }
 
     private void Update()
