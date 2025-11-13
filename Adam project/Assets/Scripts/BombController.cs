@@ -90,7 +90,8 @@ public class BombController : MonoBehaviour
 
         if (tile != null)
         {
-
+            Instantiate(destructiblePrefab, position, Quaternion.identity);
+            destructibleTiles.SetTile(cell, tile);
         }
     }
 
