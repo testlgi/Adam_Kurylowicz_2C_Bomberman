@@ -30,6 +30,8 @@ public class BombController : MonoBehaviour
     private IEnumerator PlaceBomb()
     {
         Vector2 position = transform.position;
+        position.x = Mathf.Round(position.x);
+        position.y = Mathf.Round(position.y);
 
         GameObject bomb = Instantiate(bombPrefab, position, Quaternion.identity);
         bombsRemaining--;
@@ -37,6 +39,8 @@ public class BombController : MonoBehaviour
         yield return new WaitForSeconds(bombFuseTime);
 
         position = bomb.transform.position;
+        position.x = Mathf.Round(position.x);
+        position.y = Mathf.Round(position.y);
 
         Explosion explosion = Instantiate(explosionPrefab, position, Quaternion.identity);
         explosion.SetActiveRenderer(explosion.start);
