@@ -3730,6 +3730,9 @@ MonoBehaviour:
   bombPrefab: {fileID: 2694388864140541040, guid: 3f573cba2e55a884383a7961d4088780, type: 3}
   bombFuseTime: 3
   bombAmount: 2
+  explosionPrefab: {fileID: 3841979645683231305, guid: 12008436560d5c74ea3cf51f805169ae, type: 3}
+  explosionDuration: 1
+  explosionRadius: 1
 --- !u!1 &2095886380
 GameObject:
   m_ObjectHideFlags: 0
