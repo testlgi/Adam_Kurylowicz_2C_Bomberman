@@ -19,7 +19,7 @@ public class BombController : MonoBehaviour
 
     [Header("Destructible")]
     public Tilemap destructibleTiles;
-    public Destructible destructiblePrefab;
+    public GameObject destructiblePrefab;
 
     private void OnEnable()
     {
