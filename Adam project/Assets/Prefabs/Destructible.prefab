@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 7294979193221069605}
   - component: {fileID: 4333733812820167182}
   - component: {fileID: 1353238768963431827}
+  - component: {fileID: 2301839021061704827}
   m_Layer: 0
   m_Name: Destructible
   m_TagString: Untagged
@@ -155,3 +156,16 @@ MonoBehaviour:
   animationTime: 0.1666667
   loop: 0
   idle: 0
+--- !u!114 &2301839021061704827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 85405607906410457}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1060529dc3964034795c6047ddda183f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destructionTime: 1

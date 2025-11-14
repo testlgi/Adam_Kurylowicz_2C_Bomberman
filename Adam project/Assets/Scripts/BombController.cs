@@ -19,7 +19,7 @@ public class BombController : MonoBehaviour
 
     [Header("Destructible")]
     public Tilemap destructibleTiles;
-    public GameObject destructiblePrefab;
+    public Destructible destructiblePrefab;
 
     private void OnEnable()
     {
@@ -91,7 +91,7 @@ public class BombController : MonoBehaviour
         if (tile != null)
         {
             Instantiate(destructiblePrefab, position, Quaternion.identity);
-            destructibleTiles.SetTile(cell, tile);
+            destructibleTiles.SetTile(cell, null);
         }
     }
 
